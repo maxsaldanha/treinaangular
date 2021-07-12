@@ -1,0 +1,47 @@
+[
+  {
+    "cod_filial": "MTZ",
+    "cod_id": "0000001",
+    "nome": "Adilson da Silva Barbosa",
+    "nome_social": "",
+    "data_nascimento": "13/01/1970",
+    "idade": "51 anos",
+    "sexo_biologico": "masculino",
+    "identidade_genero": "cisgênero",
+    "orientacao_sexual": "homossexual",
+    "cor_etnia":"branco",
+    "email": "conoscobarbosas123@gmail.com",
+    "wap": "021 982775459",
+    "telefone":"021 33819002"
+  },
+  {
+    "cod_filial": "MTZ",
+    "cod_id": "0000002",
+    "nome": "Maxuel Saldanha da Silva",
+    "nome_social": "",
+    "data_nascimento": "04/06/1977",
+    "idade": "44 anos",
+    "sexo_biologico": "masculino",
+    "identidade_genero": "cisgênero",
+    "orientacao_sexual": "homossexual",
+    "cor_etnia":"pardo",
+    "email": "maxuelsaldanha@gmail.com",
+    "wap": "021 980776367",
+    "telefone": "" 
+  },
+  {
+    "cod_filial": "MTZ",
+    "cod_id": "0000003",
+    "nome": "Maxuel Saldanha Rodrigues",
+    "nome_social": "Maxine Saldanha Rodrigues",
+    "data_nascimento": "04/06/1977",
+    "idade": "44 anos",
+    "sexo_biologico": "masculino",
+    "identidade_genero": "cisgênero",
+    "orientacao_sexual": "homossexual",
+    "cor_etnia":"pardo",
+    "email": "maxuelsaldanha@gmail.com",
+    "wap": "021 980776367",
+    "telefone": "" 
+  }
+]
