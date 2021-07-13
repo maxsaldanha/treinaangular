@@ -25,7 +25,7 @@ import { Component, OnInit } from '@angular/core';
 export class ClientesComponent implements OnInit {
   item: any;
   panelOpenState = false;
-  userLoggedIn = false;
+  userLoggedIn = true;
 
   constructor() {
     this.read_lista();

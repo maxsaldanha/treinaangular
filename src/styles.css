@@ -16,24 +16,26 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
   align-items: center;
 }
 
+.section {
+  margin-top: 50px;
+}
+/*CSS Menu superior */
+
 .button-menu {
   display: table-cell;
   padding: 8px;
   color: #ffffff;
   text-transform: uppercase;
 }
-.txt-buttom-menu {
+.lbl-buttom-menu {
   font-size: small;
   text-transform: uppercase;
   color: #ffffff;
 }
-.section {
-  margin-top: 50px;
+.dropdown-red {
+  background-image: linear-gradient(to right, rgb(66, 5, 5) , rgb(175, 19, 19));
 }
 
-.dropdown-red {
-  background-image: linear-gradient(to right, rgba(66, 5, 5, 0.815) , rgba(175, 19, 19, 0.87));
-}
 /* CSS Panel Expansion*/
 
 mat-expansion-panel-header{
@@ -82,18 +84,9 @@ mat-expansion-panel-header :hover{
   color: black;
 }
 
-.list-cliente {
-  font-size: medium;
-  font-weight: bold;
-  -webkit-touch-callout: none;  /* iPhone OS, Safari */
-  -webkit-user-select: none;    /* Chrome, Safari 3 */
-  -khtml-user-select: none;     /* Safari 2 */
-  -moz-user-select: none;       /* Firefox */
-  -ms-user-select: none;        /* IE10+ */
-  user-select: none;            /* Possível implementação no futuro */
-}
-/* CSS Texto na aplicação*/
-.p-titulo {
+/*CSS Labels */
+
+.lbl-mediumboldupper {
   font-size: medium;
   font-weight: bold;
   text-transform: uppercase;
@@ -105,7 +98,20 @@ mat-expansion-panel-header :hover{
   user-select: none;            /* Possível implementação no futuro */
 }
 
-.p-subtitulo {
+.lbl-mediumboldupperwhite {
+  font-size: medium;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+  -webkit-user-select: none;    /* Chrome, Safari 3 */
+  -khtml-user-select: none;     /* Safari 2 */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* IE10+ */
+  user-select: none;            /* Possível implementação no futuro */
+}
+
+.lbl-smallupperbold {
  font-size: small;
  text-transform: uppercase;
  font-weight: bold;
@@ -117,7 +123,7 @@ mat-expansion-panel-header :hover{
   user-select: none;            /* Possível implementação no futuro */
 }
 
-.p-subtitulo1 {
+.lbl-mediumcapitalize {
   font-size: medium;
   text-transform: capitalize;
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -128,21 +134,10 @@ mat-expansion-panel-header :hover{
    user-select: none;            /* Possível implementação no futuro */
  }
 
-.p-subtitulo2 {
+.lbl-mediumboldcaptz {
   font-size: medium;
   font-weight: bold;
-  -webkit-touch-callout: none;  /* iPhone OS, Safari */
-   -webkit-user-select: none;    /* Chrome, Safari 3 */
-   -khtml-user-select: none;     /* Safari 2 */
-   -moz-user-select: none;       /* Firefox */
-   -ms-user-select: none;        /* IE10+ */
-   user-select: none;            /* Possível implementação no futuro */
- }
-
- .item-subtitulo1 {
-  font-size: medium;
   text-transform: capitalize;
-  margin-right: 15%;
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
    -webkit-user-select: none;    /* Chrome, Safari 3 */
    -khtml-user-select: none;     /* Safari 2 */
@@ -151,9 +146,8 @@ mat-expansion-panel-header :hover{
    user-select: none;            /* Possível implementação no futuro */
  }
 
- .item-subtitulo3 {
+ .lbl-medium {
   font-size: medium;
-  margin-right: 15%;
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
    -webkit-user-select: none;    /* Chrome, Safari 3 */
    -khtml-user-select: none;     /* Safari 2 */
@@ -162,17 +156,6 @@ mat-expansion-panel-header :hover{
    user-select: none;            /* Possível implementação no futuro */
  }
 
-.item-subtitulo2 {
-  font-size: medium;
-  font-weight: bold;
-  margin-right: 0.5%;
-  -webkit-touch-callout: none;  /* iPhone OS, Safari */
-   -webkit-user-select: none;    /* Chrome, Safari 3 */
-   -khtml-user-select: none;     /* Safari 2 */
-   -moz-user-select: none;       /* Firefox */
-   -ms-user-select: none;        /* IE10+ */
-   user-select: none;            /* Possível implementação no futuro */
- }
 .p-texto {
   font-size: small;
   padding: 5px;
@@ -221,6 +204,10 @@ mat-expansion-panel-header :hover{
   display: inline-block;
 }
 
+.tooltip-red {
+  color: #ffffff; /*Cor da fonte */
+  background: #7a0a0a; /*Cor do fundo */
+}
 /*Telas*/
 @media screen and (max-width: 1024px) {
 

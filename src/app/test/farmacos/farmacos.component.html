@@ -1,38 +1,40 @@
 
 <mat-list class= "list-expansion">
   <mat-accordion *ngFor="let item of item">
+    <mat-divider></mat-divider>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header class="expansion-panel-hover">
         <mat-panel-title>
-          <p class="p-titulo">{{item.titulo}}</p>
+          <p class="lbl-mediumboldupper">{{item.titulo}}</p>
         </mat-panel-title>
       </mat-expansion-panel-header>
-        <p class="p-subtitulo2">{{item.classificacao}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.apresentacao"><p class="p-subtitulo">Apresentação</p></mat-card>
+        <p class="lbl-mediumboldcaptz">{{item.classificacao}} </p>
+        <mat-card class="card-expansion" *ngIf ="item.apresentacao"><p class="lbl-mediumboldupperwhite ">Apresentação</p></mat-card>
         <p class="p-texto" [hidden] ="!item.apresentacao">{{item.apresentacao}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.reconstituicao"><p class="p-subtitulo">Reconstituição</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.reconstituicao"><p class="lbl-mediumboldupperwhite ">Reconstituição</p></mat-card>
         <p class="p-texto" [hidden] ="!item.reconstituicao">{{item.reconstituicao}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.diluente"><p class="p-subtitulo">Soluções para diluição</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.diluente"><p class="lbl-mediumboldupperwhite ">Soluções para diluição</p></mat-card>
         <p class="p-texto" [hidden] ="!item.diluente">{{item.diluente}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.diluicao"><p class="p-subtitulo">Diluição</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.diluicao"><p class="lbl-mediumboldupperwhite ">Diluição</p></mat-card>
         <p class="p-texto" [hidden] ="!item.diluicao">{{item.diluicao}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.viaadmin"><p class="p-subtitulo">Via de administração</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.viaadmin"><p class="lbl-mediumboldupperwhite ">Via de administração</p></mat-card>
         <p class="p-texto" [hidden] ="!item.viaadmin">{{item.viaadmin}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.tempoinfusao"><p class="p-subtitulo">Tempo de Infusão</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.tempoinfusao"><p class="lbl-mediumboldupperwhite ">Tempo de Infusão</p></mat-card>
         <p class="p-texto" [hidden] ="!item.tempoinfusao">{{item.tempoinfusao}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.estoque"><p class="p-subtitulo">Estoque</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.estoque"><p class="lbl-mediumboldupperwhite ">Estoque</p></mat-card>
         <p class="p-texto" [hidden] ="!item.estoque">{{item.estoque}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.estabilidade"><p class="p-subtitulo">Estabilidade</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.estabilidade"><p class="lbl-mediumboldupperwhite ">Estabilidade</p></mat-card>
         <p class="p-texto" [hidden] ="!item.estabilidade">{{item.estabilidade}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.propriedadesquimicas"><p class="p-subtitulo">Propriedades químicas</p> </mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.propriedadesquimicas"><p class="lbl-mediumboldupperwhite ">Propriedades químicas</p> </mat-card>
         <p class="p-texto" [hidden] ="!item.propriedadesquimicas">{{item.propriedadesquimicas}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.incompatibilidade"><p class="p-subtitulo">Incompatibilidade (Em Y)</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.incompatibilidade"><p class="lbl-mediumboldupperwhite ">Incompatibilidade (Em Y)</p></mat-card>
         <p class="p-texto" [hidden] ="!item.incompatibilidade">{{item.incompatibilidade}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.reacoesadversas"><p class="p-subtitulo">Reações Adversas</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.reacoesadversas"><p class="lbl-mediumboldupperwhite ">Reações Adversas</p></mat-card>
         <p class="p-texto" [hidden] ="!item.reacoesadversas">{{item.reacoesadversas}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.orientacoesgerais"><p class="p-subtitulo">Orientações Gerais</p> </mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.orientacoesgerais"><p class="lbl-mediumboldupperwhite ">Orientações Gerais</p> </mat-card>
         <p class="p-texto" [hidden] ="!item.orientacoesgerais">{{item.orientacoesgerais}}</p>
         <p class="p-fonte" [hidden] ="!item.fonte"> Fonte: {{item.fonte}}</p>
     </mat-expansion-panel>
-</mat-accordion>
+    <mat-divider></mat-divider>
+  </mat-accordion>
 </mat-list>

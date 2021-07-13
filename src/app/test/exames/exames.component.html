@@ -1,27 +1,29 @@
 <mat-list class= "list-expansion">
   <mat-accordion *ngFor="let item of item">
+    <mat-divider></mat-divider>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
       <mat-expansion-panel-header class="expansion-panel-hover">
         <mat-panel-title>
-          <p class="p-titulo">{{item.titulo}}</p>
+          <p class="lbl-mediumboldupper">{{item.titulo}}</p>
         </mat-panel-title>
       </mat-expansion-panel-header>
-        <p class="p-subtitulo2" [hidden] ="!item.setor">{{item.setor}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.sinonimia"><p class="p-subtitulo">Sinonímia</p></mat-card>
+        <p class="lbl-mediumboldcaptz" [hidden] ="!item.setor">{{item.setor}}</p>
+        <mat-card class="card-expansion" *ngIf ="item.sinonimia"><p class="lbl-mediumboldupperwhite">Sinonímia</p></mat-card>
         <p class="p-texto" [hidden] ="!item.sinonimia">{{item.sinonimia}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.matbiologico"><p class="p-subtitulo">Material Biológico</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.matbiologico"><p class="lbl-mediumboldupperwhite">Material Biológico</p></mat-card>
         <p class="p-texto" [hidden] ="!item.matbiologico">{{item.matbiologico}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.volume"><p class="p-subtitulo">Volume</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.volume"><p class="lbl-mediumboldupperwhite">Volume</p></mat-card>
         <p class="p-texto" [hidden] ="!item.volume">{{item.volume}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.conservante"><p class="p-subtitulo">Conservante</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.conservante"><p class="lbl-mediumboldupperwhite">Conservante</p></mat-card>
         <p class="p-texto" [hidden] ="!item.conservante">{{item.conservante}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.interverente"><p class="p-subtitulo">Interferentes</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.interverente"><p class="lbl-mediumboldupperwhite">Interferentes</p></mat-card>
         <p class="p-texto" [hidden] ="!item.interverente">{{item.interverente}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.instrucoes"><p class="p-subtitulo">Instruções ao Paciente</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.instrucoes"><p class="lbl-mediumboldupperwhite">Instruções ao Paciente</p></mat-card>
         <p class="p-texto" [hidden] ="!item.instrucoes">{{item.instrucoes}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.interpretacao"><p class="p-subtitulo">Interpretação Clínica</p></mat-card>
+        <mat-card class="card-expansion" *ngIf ="item.interpretacao"><p class="lbl-mediumboldupperwhite">Interpretação Clínica</p></mat-card>
         <p class="p-texto" [hidden] ="!item.interpretacao">{{item.interpretacao}} </p>
         <p class="p-fonte" [hidden] ="!item.fonte"> Fonte: {{item.fonte}}</p>
     </mat-expansion-panel>
-</mat-accordion>
+    <mat-divider></mat-divider>    
+  </mat-accordion>
 </mat-list>

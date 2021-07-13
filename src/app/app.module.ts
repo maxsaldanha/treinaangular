@@ -23,8 +23,9 @@ import { AppComponent } from './app.component';
 import { TestReadComponent } from './test/test-read/test-read.component';
 import { FarmacosComponent } from './test/farmacos/farmacos.component';
 import { ExamesComponent } from './test/exames/exames.component';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { ClientesComponent } from './test/clientes/clientes.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { ClientesComponent } from './test/clientes/clientes.component';
     MatPaginatorModule,
     MatSnackBarModule,
     MatMenuModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
