@@ -12,7 +12,25 @@
     "cor_etnia":"branco",
     "email": "conoscobarbosas123@gmail.com",
     "wap": "021 982775459",
-    "telefone":"021 33819002"
+    "telefone":"021 33819002",
+    "peso":"",
+    "altura":"1.65 cm",
+    "atendimento": [
+      { 
+        "dt_atendimento":"17/06/2021",
+        "filial":"MTZ",
+        "convenio":"UNIMED",
+        "status_pagamento":"Pago",
+        "status_resultado":"Liberado"
+      },
+      { 
+        "dt_atendimento":"17/06/2021",
+        "filial":"MTZ",
+        "convenio":"UNIMED",
+        "status_pagamento":"Pago",
+        "status_resultado":"Liberado"
+      }
+    ]
   },
   {
     "cod_filial": "GLS",
@@ -27,7 +45,10 @@
     "cor_etnia":"pardo",
     "email": "maxuelsaldanha@gmail.com",
     "wap": "021 980776367",
-    "telefone": "" 
+    "telefone": "",
+    "peso":"",
+    "altura":"",
+    "atendimento":"" 
   },
   {
     "cod_filial": "DPO",
@@ -42,6 +63,17 @@
     "cor_etnia":"pardo",
     "email": "maxuelsaldanha@gmail.com",
     "wap": "021 980776367",
-    "telefone": "" 
+    "telefone": "",
+    "peso":"",
+    "altura":"",
+    "atendimento": [
+      {
+        "dt_atendimento":"17/06/2021",
+        "filial":"MTZ",
+        "convenio":"UNIMED",
+        "status_pagamento":"Pago",
+        "status_resultado":"Liberado"
+      }
+    ]
   }
 ]

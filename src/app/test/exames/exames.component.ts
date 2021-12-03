@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,23 +6,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './exames.component.html',
   styleUrls: ['./exames.component.css']
 })
+
 export class ExamesComponent implements OnInit {
   item: any;
   panelOpenState = false;
+  url = './assets/json/exames.json';
 
-  constructor() {
-    this.read_lista();
+  constructor( public http: HttpClient) { }
 
-  }
   ngOnInit() {
-
-  }
-  read_lista(){
-    fetch('./assets/json/exames.json').then (res => res.json())
-    .then(json => {
-      this.item = json;
-    });
-  }
-
+    this.http.get<any>(this.url).subscribe(Response => {
+      this.item = Response
+    })
+  }  
 }
 

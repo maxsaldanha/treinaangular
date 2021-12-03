@@ -1,53 +1,63 @@
-<header class="header-toolbar">
+<header class="header-toolbar">  
   <div class="button-menu">
-      <button mat-button [matMenuTriggerFor]="menu1">ATENDIMENTO</button>
-      <mat-menu #menu1="matMenu" class="dropdown-red">
-        <button mat-menu-item routerLink="clientes">
-          <img src="assets/icons/ic-atendimento.svg" class="icon-small"><span class="lbl-buttom-menu">clientes</span></button>
-        <button mat-menu-item routerLink="exames">
-          <img src="assets/icons/ic-microscopio.svg" class="icon-small"><span class="lbl-buttom-menu">exames</span></button>
-        <button mat-menu-item routerLink="farmacos">
-          <img src="assets/icons/ic-farmaco.svg" class="icon-small"><span class="lbl-buttom-menu">fármacos</span></button>
-      </mat-menu>
+      <button mat-button routerLink="clientes">ATENDIMENTO</button>     
 
-      <button mat-button [matMenuTriggerFor]="menu2">FINANCEIRO</button>
-      <mat-menu #menu2="matMenu" class="dropdown-red">
+      <button mat-button [matMenuTriggerFor]="menu2">MATERIAL</button>
+      <mat-menu #menu2="matMenu" >
         <button mat-menu-item routerLink="clientes">
-          <img src="assets/icons/ic-atendimento.svg" class="icon-small"><span class="lbl-buttom-menu">clientes</span></button>
+         <span class="lbl-buttom-menu ">clientes</span></button>
         <button mat-menu-item routerLink="exames">
-          <img src="assets/icons/ic-microscopio.svg" class="icon-small"><span class="lbl-buttom-menu">exames</span></button>
+          <span class="lbl-buttom-menu ">exames</span></button>
         <button mat-menu-item routerLink="farmacos">
-          <img src="assets/icons/ic-farmaco.svg" class="icon-small"><span class="lbl-buttom-menu">fármacos</span></button>
+          <span class="lbl-buttom-menu">fármacos</span></button>
       </mat-menu>
 
       <button mat-button [matMenuTriggerFor]="menu3">ANALISE</button>
-      <mat-menu #menu3="matMenu" class="dropdown-red">
+      <mat-menu #menu3="matMenu" >
         <button mat-menu-item routerLink="clientes">
-          <img src="assets/icons/ic-atendimento.svg" class="icon-small"><span class="lbl-buttom-menu">clientes</span></button>
+          <span class="lbl-buttom-menu">clientes</span></button>
         <button mat-menu-item routerLink="exames">
-          <img src="assets/icons/ic-microscopio.svg" class="icon-small"><span class="lbl-buttom-menu">exames</span></button>
+          <span class="lbl-buttom-menu">exames</span></button>
         <button mat-menu-item routerLink="farmacos">
-          <img src="assets/icons/ic-farmaco.svg" class="icon-small"><span class="lbl-buttom-menu">fármacos</span></button>
+          <span class="lbl-buttom-menu">fármacos</span></button>
       </mat-menu>
 
-      <button mat-button [matMenuTriggerFor]="menu4">CONSULTAS</button>
-      <mat-menu #menu4="matMenu" class="dropdown-red">
+      <button mat-button [matMenuTriggerFor]="menu4">RELATÓRIOS</button>
+      <mat-menu #menu4="matMenu" >
         <button mat-menu-item routerLink="clientes">
-          <img src="assets/icons/ic-atendimento.svg" class="icon-small"><span class="lbl-buttom-menu">clientes</span></button>
+         <span class="lbl-buttom-menu">clientes</span></button>
         <button mat-menu-item routerLink="exames">
-          <img src="assets/icons/ic-microscopio.svg" class="icon-small"><span class="lbl-buttom-menu">exames</span></button>
+          <span class="lbl-buttom-menu">exames</span></button>
         <button mat-menu-item routerLink="farmacos">
-          <img src="assets/icons/ic-farmaco.svg" class="icon-small"><span class="lbl-buttom-menu">fármacos</span></button>
+          <span class="lbl-buttom-menu">fármacos</span></button>
       </mat-menu>
 
       <button mat-button [matMenuTriggerFor]="menu5">CADASTRO</button>
-      <mat-menu #menu5="matMenu" class="dropdown-red">
+      <mat-menu #menu5="matMenu" >
         <button mat-menu-item routerLink="clientes">
-          <img src="assets/icons/ic-atendimento.svg" class="icon-small"><span class="lbl-buttom-menu">clientes</span></button>
+          <span class="lbl-buttom-menu">clientes</span></button>
         <button mat-menu-item routerLink="exames">
-          <img src="assets/icons/ic-microscopio.svg" class="icon-small"><span class="lbl-buttom-menu">exames</span></button>
+          <span class="lbl-buttom-menu">exames</span></button>
         <button mat-menu-item routerLink="farmacos">
-          <img src="assets/icons/ic-farmaco.svg" class="icon-small"><span class="lbl-buttom-menu">fármacos</span></button>
+          <span class="lbl-buttom-menu">Medicamentos</span></button>
+        <button mat-menu-item routerLink="farmacos">
+          <span class="lbl-buttom-menu">Funcionários</span></button>
+        <button mat-menu-item routerLink="farmacos">
+          <span class="lbl-buttom-menu">unidade</span></button>
+      </mat-menu>
+
+      <button mat-button [matMenuTriggerFor]="menu6">CONFIGURAÇÕES</button>
+      <mat-menu #menu6="matMenu" >
+        <button mat-menu-item routerLink="clientes">
+          <span class="lbl-buttom-menu">clientes</span></button>
+        <button mat-menu-item routerLink="exames">
+          <span class="lbl-buttom-menu">exames</span></button>
+        <button mat-menu-item routerLink="farmacos">
+          <span class="lbl-buttom-menu">Medicamentos</span></button>
+        <button mat-menu-item routerLink="farmacos">
+          <span class="lbl-buttom-menu">Funcionários</span></button>
+        <button mat-menu-item routerLink="farmacos">
+          <span class="lbl-buttom-menu">unidade</span></button>
       </mat-menu>
   </div>
 </header>

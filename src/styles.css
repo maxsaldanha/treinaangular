@@ -1,11 +1,11 @@
 html { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: url(/assets/background/fundo.svg) 0 0/100% no-repeat ; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: url(/assets/background/fundo.svg) 0 0/100% no-repeat ; background-color: #f3efef; }
 
-/*CSS Esqueleto */
+/* /Section*/
 
 .header-toolbar{
   position: fixed;
-  height:50px;
+  height:60px;
   top: 0;
   left: 0;
   z-index: 2;
@@ -16,10 +16,26 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
   align-items: center;
 }
 
-.section {
-  margin-top: 50px;
+.list-expansion{
+  margin: 60px 5px 0px 5px;
 }
-/*CSS Menu superior */
+
+.list-content{
+  margin: 65px 5px 0px 5px;
+}
+
+.sub-menu{  
+  direction: rtl;
+  position: fixed;
+  height:fit-content;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+  width: 200px;
+  display: table;
+   
+}
+/*CSS Button */
 
 .button-menu {
   display: table-cell;
@@ -27,13 +43,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
   color: #ffffff;
   text-transform: uppercase;
 }
+
 .lbl-buttom-menu {
   font-size: small;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000000;
+  font-weight: bold;
 }
-.dropdown-red {
-  background-image: linear-gradient(to right, rgb(66, 5, 5) , rgb(175, 19, 19));
+
+.button-sub-menu {
+  border-radius: 15px 50px;
+}
+
+.lbl-buttom-menu2 :hover {
+  background: #7a0a0a;
+  color: #ffffff;
+  border-radius: 5px;
+  
 }
 
 /* CSS Panel Expansion*/
@@ -42,40 +68,66 @@ mat-expansion-panel-header{
   background: #ffffff;
 }
 
-mat-expansion-panel-header :hover{
-  color:#aa0c0c;
-  padding: 3px;
-}
-
-.card-actiocns {
+a {
+  color: #000000;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 1px;
 }
-
-.list-expansion{
-  margin: 50px 10px 0px 10px;
-}
-
-.card-expansion {
-  background-image: linear-gradient(to right, rgb(87, 4, 4) , rgba(155, 9, 9, 0.603));
+.a-hover-red :hover {
+  background: #7a0a0a;
   color: #ffffff;
-  height: 8px;
+  border-radius: 5px;  
+}
+
+.a-hover-white :hover {
+  background: #ffffff;
+  color: #ffffff;
+  border-radius: 5px;  
 }
 
 /*CSS ìcones */
+
 .icon {
   height: 30px;
   width: 30px;
   padding-right: 5px;
   color: #ffffff;
 }
+  /*CSS Icon Hover */
+  .icon:hover{
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+  }
+
+.icon-mediun {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  color: #ffffff;
+  fill: white;
+  transition: all 1s;
+  border: 3px solid transparent;
+}
+  /*CSS Icon Hover */
+  .icon-mediun:hover{
+    border: 3px solid #ffffff;
+    border-radius: 50%;  
+  }
 
 .icon-small {
   height: 30px;
   width: 30px;
   padding-right: 2px;
   margin-bottom: -8px;
+  color: #ffffff;
 }
+  /*CSS Icon Hover */
+  .icon-small:hover{
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+  }
+
 .icon-small-dark {
   height: 30px;
   width: 30px;
@@ -83,10 +135,15 @@ mat-expansion-panel-header :hover{
   margin-bottom: -8px;
   color: black;
 }
+  /*CSS Icon Hover */
+  .icon-small-dark:hover{
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+  }
 
 /*CSS Labels */
 
-.lbl-mediumboldupper {
+.lbl-mediun_bold_upper {
   font-size: medium;
   font-weight: bold;
   text-transform: uppercase;
@@ -98,8 +155,33 @@ mat-expansion-panel-header :hover{
   user-select: none;            /* Possível implementação no futuro */
 }
 
-.lbl-mediumboldupperwhite {
-  font-size: medium;
+.lbl-small_bold_upper {
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+  -webkit-user-select: none;    /* Chrome, Safari 3 */
+  -khtml-user-select: none;     /* Safari 2 */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* IE10+ */
+  user-select: none;            /* Possível implementação no futuro */
+}
+
+.lbl-small_bold_upperred {
+  font-size: small;
+  font-weight: bold;
+  color: #7a0a0a;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+  -webkit-user-select: none;    /* Chrome, Safari 3 */
+  -khtml-user-select: none;     /* Safari 2 */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* IE10+ */
+  user-select: none;            /* Possível implementação no futuro */
+}
+
+.lbl-small_bold_upper_white {
+  font-size: small;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -122,6 +204,17 @@ mat-expansion-panel-header :hover{
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
 }
+
+.lbl-smallcapitalize {
+  font-size: small;
+  text-transform: capitalize;
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+   -webkit-user-select: none;    /* Chrome, Safari 3 */
+   -khtml-user-select: none;     /* Safari 2 */
+   -moz-user-select: none;       /* Firefox */
+   -ms-user-select: none;        /* IE10+ */
+   user-select: none;            /* Possível implementação no futuro */
+ }
 
 .lbl-mediumcapitalize {
   font-size: medium;
@@ -157,7 +250,7 @@ mat-expansion-panel-header :hover{
  }
 
 .p-texto {
-  font-size: small;
+  font-size: medium;
   padding: 5px;
   text-align: justify;
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -171,6 +264,8 @@ mat-expansion-panel-header :hover{
 .p-fonte {
   font-size: xx-small;
   text-align: right;
+  margin: 0px;
+  padding: 0px;
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
   -webkit-user-select: none;    /* Chrome, Safari 3 */
   -khtml-user-select: none;     /* Safari 2 */
@@ -178,38 +273,148 @@ mat-expansion-panel-header :hover{
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
 }
+
+
+/* CSS Card*/
+
+mat-card-actions {
+  align-items: flex-end;
+  display: flex;
+  align-self: flex-end;
+}
+
+.card-actiocns {
+  font-weight: bold;
+  text-transform: uppercase;  
+}
+
+.card-expansion {
+  color: #000000;
+  height: fit-content;
+  margin: 5px;  
+}
+
 .card-list {
   margin-bottom: 5px;
 }
 
-.container {
-  width: 1350px;
-  height: 600px;
+/* CSS Colunas*/
+
+.column-1 {
+  width: 100%;
+  display:inline-table;
+  text-align: justify;    
 }
 
 .column-2{
   width: calc(100% / 2);
-  display: inline-block;
-  margin-bottom: 10px;
+  display: inline-table;
+  text-align: justify; 
 }
 
 .column-3{
   width: calc(100% / 3);
-  display: inline-block;
-  margin-bottom: 10px;
+  display: inline-table;
+  text-align: justify; 
 }
 
 .column-4{
   width: calc(100% / 4);
-  display: inline-block;
+  display: inline-table;
+  text-align: justify;
 }
+
+.column-5{
+  width: calc(100% / 5);
+  display: inline-table;
+  text-align: justify;
+}
+
+.column-6{
+  width: calc(100% / 6);
+  display: inline-table;
+  text-align: justify;
+}
+
+.column-10{
+  width: calc(100% / 10);
+  display: inline-table;
+  text-align: justify;
+}
+
+.column-20{
+  width: calc(100% / 20);
+  display: inline-table;
+  text-align: justify;
+}
+
+/* CSS Hints de informação*/
 
 .tooltip-red {
   color: #ffffff; /*Cor da fonte */
   background: #7a0a0a; /*Cor do fundo */
 }
+
 /*Telas*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 767px) {
+
+}
+
+/*Biblioteca*/
+
+/*Efeitos*/
+
+.effects-rotate {
+  transition: all 1s;
+}
+
+.effects-border-radius{
+  transition: all .5s;
+  border: 10px solid transparent;
+  }
+.effects-border-radius:hover{
+  border: 10px solid #136497;
+  border-radius: 50%;
+  }
+
+/*Efeito Scale */
+.effects-scale{
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.effects-scale:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/*Efeito Drop Shadow */
+.effects-dropshadow{
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.effects-dropshadow:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Extra - Todos Efeitos Juntos (menos o BLUR) */
+.multieffects{
+  transition: all .5s;
+  border: 10px solid #eeeeee;
+  }
+.multieffects:hover{
+  border: 10px solid #781f40;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  -webkit-transform: rotateZ(-360deg) scale(1.5);
+  transform: rotateZ(-360deg) scale(1.5);
+  }

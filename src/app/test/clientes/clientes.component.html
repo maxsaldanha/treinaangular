@@ -1,98 +1,185 @@
-<section class="list-expansion"> 
-  <mat-card *ngFor="let item of item" class="card-list">
+<!-- Section com os botões de ação -->
+<!-- Section com os botões de ação -->
+<section class="sub-menu">  
+  <a href="dash">    
+    <img src="assets/icons/ic-new-user.svg" class="icon-mediun" matTooltip="Cadastrar um novo cliente." matTooltipClass="tooltip-red">   
+  </a>
+  <a href="dash">    
+    <img src="assets/icons/search-outline-white.svg" class="icon-mediun" matTooltip="Localizar um cliente." matTooltipClass="tooltip-red">   
+  </a> 
+</section>
+
+<!-- Section dos dados -->
+<section class="list-content"> 
+
+  <!-- Card de informação do cliente -->
+  <mat-card *ngFor="let item of item" class= "card-expansion">     
     <mat-card-title> 
       <ng-template [ngIf]="item.nome_social" [ngIfElse]="nome_civil">
         <div class="column-2"> 
-          <span class="lbl-mediumboldupper">{{item.nome_social}}</span>
+          <span class="lbl-mediun_bold_upper">{{item.nome_social}}</span>
         </div>
     </ng-template>
     
     <ng-template #nome_civil>
       <div class="column-2"> 
-        <span class="lbl-mediumboldupper ">{{item.nome}}</span>
+        <span class="lbl-mediun_bold_upper ">{{item.nome}}</span>
       </div>
-    </ng-template>
-      
-      <div class="column-2">
-        <span class="lbl-mediumcapitalize" [hidden] ="!item.orientacao_sexual">Matrícula:</span> 
-        <span class="lbl-mediumcapitalize" [hidden] ="!item.orientacao_sexual"> {{item.cod_filial}}-{{item.cod_id}}</span>   
-      </div>
-    </mat-card-title>               
-      <mat-accordion >
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-          <mat-expansion-panel-header class="expansion-panel-header">
-            <mat-panel-title>
+    </ng-template>    
+    </mat-card-title>  
+                 
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
               Informações Pessoais
-            </mat-panel-title>
-          </mat-expansion-panel-header>  
-          <mat-card-content>
-            <ng-template [ngIf]="item.nome_social" [ngIfElse]="nome_civil">
-              <div class="column-2"> 
-                <span class="lbl-mediumboldupper">{{item.nome_social}}</span>
+          </mat-panel-title>                     
+        </mat-expansion-panel-header>
+        <mat-card class="card-expansion">
+
+          <!-- Dados pessoais -->
+          <section>
+            <div>
+              <span class="lbl-small_bold_upper">Matrícula: </span> 
+              <span class="lbl-mediumcapitalize"> {{item.cod_filial}}-{{item.cod_id}}</span>   
+            </div>
+            <ng-template [ngIf]="item.nome_social" [ngIfElse]="civil">
+              <div class="column-2">               
+                <span class="lbl-small_bold_upper">Nome Social: </span>
+                <span class="lbl-mediumcapitalize"> {{item.nome_social}}</span>
               </div>
               <div class="column-2"> 
-                <span class="lbl-mediumboldupper">{{item.nome}}</span>
+                <span class="lbl-small_bold_upper">Nome Civil: </span>
+                <span class="lbl-mediumcapitalize"> {{item.nome}}</span>
               </div>
-          </ng-template>
-          
-          <ng-template #nome_civil>
-            <div class="column-2"> 
-              <span class="lbl-mediumboldupper">{{item.nome}}</span>
-            </div>
-          </ng-template>
-        </mat-card-content>
-        <mat-card-content *ngIf ="item.data_nascimento">
-            <div class="column-2">
-              <span class="lbl-mediumcapitalize" [hidden] ="!item.data_nascimento"> 
-              <img src="assets/icons/ic-nascimento-color.svg" class="icon-small"> {{item.data_nascimento}}</span>
-            </div>
-            <div class="column-2">
-              <span class="lbl-mediumcapitalize" [hidden] ="!item.idade"> 
-              <img src="assets/icons/ic-birth-date-color.svg" class="icon-small"> {{item.idade}}</span> 
-            </div>
-          </mat-card-content>
-          <mat-card-content *ngIf ="item.cor_etnia">
-            <span class="lbl-mediumboldupper" >Cor/Etinia:</span> 
-            <span class="lbl-mediumcapitalize"> {{item.cor_etnia}}</span>
-          </mat-card-content>
-          <mat-card-content> 
-            <div class="column-3" *ngIf ="item.sexo_biologico">
-              <span class="lbl-mediumboldupper">Sexo Biológico:</span> 
-              <span class="lbl-mediumcapitalize"> {{item.sexo_biologico}}</span>
-            </div>                     
-            <div class="column-3" *ngIf ="item.identidade_genero">
-              <span class="lbl-mediumboldupper" >Identidade de Gênero:</span> 
-              <span class="lbl-mediumcapitalize"> {{item.identidade_genero}}</span>
-            </div>                
-            <div class="column-3" *ngIf ="item.orientacao_sexual">
-              <span class="lbl-mediumboldupper">Orientação Sexual:</span> 
-              <span class="lbl-mediumcapitalize"> {{item.orientacao_sexual}}</span>       
-            </div>  
-          </mat-card-content>
-          <mat-card-content>
-            <mat-card-subtitle class="">Dados de Contato</mat-card-subtitle>
-            <div class="column-3" *ngIf ="item.wap">
-              <img src="assets/icons/ic-wap.svg" class="icon-small"> <span class="lbl-fontmedium">{{item.wap}}</span>
-            </div>   
-            <div class="column-3" *ngIf ="item.telefone">
-              <img src="assets/icons/ic-telefone.svg" class="icon-small"> <span class="lbl-fontmedium" >{{item.telefone}}</span>
-            </div>    
-            <div class="column-3" *ngIf ="item.email">
-              <img src="assets/icons/ic-email.svg" class="icon-small"> <span class="lbl-fontmedium"> {{item.email}}</span>     
-            </div>
-          </mat-card-content>
-          </mat-expansion-panel>
-      </mat-accordion>
-    <mat-card-actions>
-      <button mat-button matTooltip="Alterar as informaçoes do paciente." matTooltipClass="tooltip-red">
+            </ng-template>
+            
+            <ng-template #civil>
+              <div class="column-2"> 
+                <span class="lbl-small_bold_upper">Nome Civil: </span>
+                <span class="lbl-mediumcapitalize"> {{item.nome}}</span>
+              </div>
+            </ng-template>
+          </section>
+
+      <!-- Dados étnicos -->
+      <section>
+        <div *ngIf ="item.cor_etnia">
+          <span class="lbl-small_bold_upper" >Cor/Etinia:</span> 
+          <span class="lbl-mediumcapitalize"> {{item.cor_etnia}}</span>
+        </div>
+        <div class="column-2" *ngIf ="item.peso">
+          <span class="lbl-small_bold_upper">Peso: </span> 
+          <span class="lbl-mediumcapitalize"> {{item.peso}}</span>
+        </div>      
+  
+        <div class="column-2" *ngIf ="item.altura">
+          <span class="lbl-small_bold_upper" >Altura: </span> 
+          <span class="lbl-mediumcapitalize"> {{item.altura}}</span>
+        </div>
+      </section> 
+
+      <!-- Dados biológico -->
+      <section>
+        <div class="column-3" *ngIf ="item.sexo_biologico">
+          <span class="lbl-small_bold_upper">Sexo Biológico:</span> 
+          <span class="lbl-mediumcapitalize"> {{item.sexo_biologico}}</span>
+        </div>                     
+        <div class="column-3" *ngIf ="item.identidade_genero">
+          <span class="lbl-small_bold_upper" >Identidade de Gênero:</span> 
+          <span class="lbl-mediumcapitalize"> {{item.identidade_genero}}</span>
+        </div>                
+        <div class="column-3" *ngIf ="item.orientacao_sexual">
+          <span class="lbl-small_bold_upper">Orientação Sexual:</span> 
+          <span class="lbl-mediumcapitalize"> {{item.orientacao_sexual}}</span>       
+        </div>  
+      </section>
+
+      <!-- Dados de nascimento  -->
+      <section>
+        <div class="card-expansion" *ngIf ="item.data_nascimento">          
+          <div class="column-2">
+            <span class="lbl-mediumcapitalize" [hidden] ="!item.data_nascimento"> 
+            <img src="assets/icons/ic-nascimento-color.svg" class="icon-small"> {{item.data_nascimento}}</span>
+          </div>
+          <div class="column-2">
+            <span class="lbl-mediumcapitalize" [hidden] ="!item.idade"> 
+            <img src="assets/icons/ic-birth-date-color.svg" class="icon-small"> {{item.idade}}</span> 
+          </div>
+        </div>
+      </section>     
+      </mat-card>
+
+  <!-- Informações de Contato -->
+      <mat-card class="card-expansion">
+        <mat-card-subtitle class="">Contato</mat-card-subtitle>
+          <div class="column-3" *ngIf ="item.wap">
+            <img src="assets/icons/ic-wap.svg" class="icon-small"> <span class="lbl-medium">{{item.wap}}</span>
+          </div>   
+          <div class="column-3" *ngIf ="item.telefone">
+            <img src="assets/icons/ic-telefone.svg" class="icon-small"> <span class="lbl-medium">{{item.telefone}}</span>
+          </div>    
+          <div class="column-3" *ngIf ="item.email">
+            <img src="assets/icons/ic-email.svg" class="icon-small"> <span class="lbl-medium"> {{item.email}}</span>     
+          </div>
+      </mat-card>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+  <!-- Histórico de Atendimento -->
+    <mat-accordion *ngIf="item.atendimento">
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header >
+          <mat-panel-title>
+            Histórico de Atendimento
+          </mat-panel-title>            
+        </mat-expansion-panel-header> 
+        
+        <a href="" class="a-hover-red"> 
+          <mat-card class="card-expansion" *ngFor="let sub of item.atendimento">       
+          <div class="column-4" *ngIf="sub.dt_atendimento">
+            <span class="lbl-small_bold_upper">Data: </span>
+            <span class="lbl-smallcapitalize">{{sub.dt_atendimento}}</span>
+          </div>   
+          <div class="column-4" *ngIf="sub.filial">
+            <span class="lbl-small_bold_upper">Local: </span>
+            <span class="lbl-smallcapitalize">{{sub.filial}}</span>
+          </div> 
+          <div class="column-4" *ngIf="sub.status_pagamento">
+            <span class="lbl-small_bold_upper">Saldo: </span>
+            <span class="lbl-smallcapitalize">{{sub.status_pagamento}}</span>
+          </div>
+          <div class="column-4" *ngIf="sub.status_resultado">
+            <span class="lbl-small_bold_upper">Resultado: </span>
+            <span class="lbl-smallcapitalize">{{sub.status_resultado}}</span>
+          </div> 
+        </mat-card>  
+        </a>                                            
+        </mat-expansion-panel>
+    </mat-accordion>
+
+    <!-- Botões de ação rodapé -->
+    <mat-card-actions >
+      <a href="dash" class="a-hover-red">
+      <button mat-button matTooltip="Alterar as informaçoes do paciente." matTooltipClass="tooltip-red"> 
         <span class="card-actiocns">Editar</span>
-      </button>
-      <button mat-button matTooltip="Visualizar e imprimir os boletos." matTooltipClass="tooltip-red">
+      </button> 
+    </a>
+    <a href="farmacos" class="a-hover-red">
+      <button mat-button matTooltip="Visualizar e imprimir resultados liberados." matTooltipClass="tooltip-red">
+       <span class="card-actiocns">Resultados</span>
+      </button> 
+    </a>   
+    <a href="exames" class="a-hover-red">
+      <button mat-button matTooltip="Visualizar e imprimir boletos." matTooltipClass="tooltip-red">
         <span class="card-actiocns">Boletos</span>
+      </button> 
+    </a> 
+    <a href="exames" class="a-hover-red"> 
+      <button mat-button matTooltip="Visualizar e imprimir etiquetas." matTooltipClass="tooltip-red">
+        <span class="card-actiocns">Etiquetas</span>
       </button>
-      <button mat-button matTooltip="Visualizar e imprimir os resultados de exames." matTooltipClass="tooltip-red">
-        <span class="card-actiocns">Resultados</span>
-      </button>
+    </a>  
     </mat-card-actions>
   </mat-card>    
 </section>

@@ -17,7 +17,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestReadComponent } from './test/test-read/test-read.component';
@@ -26,6 +26,10 @@ import { ExamesComponent } from './test/exames/exames.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ClientesComponent } from './test/clientes/clientes.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ComponentNameComponent } from './component-name/component-name.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 
 @NgModule({
@@ -34,7 +38,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     TestReadComponent,
     FarmacosComponent,
     ExamesComponent,
-    ClientesComponent
+    ClientesComponent,
+    ComponentNameComponent
   ],
   imports: [
     BrowserModule,
@@ -54,13 +59,17 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSelectModule,
     MatInputModule,
     MatDatepickerModule,
+    MatAutocompleteModule,
     FormsModule,
     ReactiveFormsModule,
     MatPaginatorModule,
     MatSnackBarModule,
     MatMenuModule,
     MatExpansionModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatGridListModule,
+    LayoutModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

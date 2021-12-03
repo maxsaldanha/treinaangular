@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,22 +6,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './farmacos.component.html',
   styleUrls: ['./farmacos.component.css']
 })
+/* Fonte: https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf*/
 export class FarmacosComponent implements OnInit {
   item: any;
   panelOpenState = false;
+  url = './assets/json/medicamento.json'
 
-  constructor() {
-    this.read_lista();
+  constructor(private http : HttpClient) {  }
 
-  }
   ngOnInit() {
-
+    this.http.get(this.url).subscribe (Response => {
+      this.item = Response
+    })
   }
-  read_lista(){
-    fetch('./assets/json/medicamento.json').then (res => res.json())
-    .then(json => {
-      this.item = json;
-    });
-  }
-
 }

@@ -1,29 +1,90 @@
-<mat-list class= "list-expansion">
-  <mat-accordion *ngFor="let item of item">
-    <mat-divider></mat-divider>
+<!-- Section com os botões de ação -->
+<section class="sub-menu">  
+    <a href="dash" >    
+      <img src="assets/icons/ic-new-exame.svg" class="icon-mediun" matTooltip="Criar e configurar um novo exame." matTooltipClass="tooltip-red">   
+    </a>
+    <a href="dash" >    
+      <img src="assets/icons/search-outline-white.svg" class="icon-mediun" matTooltip="Localizar um exame." matTooltipClass="tooltip-red">   
+    </a> 
+  </section>
+
+<!-- Section dos dados -->
+<section class="list-content">   
+
+  <mat-card *ngFor="let item of item" class= "card-expansion">
+    <p class="lbl-mediun_bold_upper">{{item.titulo}}</p>
+
+  <mat-accordion multi>    
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-      <mat-expansion-panel-header class="expansion-panel-hover">
+      <mat-expansion-panel-header >
+        <mat-panel-title> Informações </mat-panel-title>
+      </mat-expansion-panel-header>  
+      <p class="lbl-mediumboldcaptz" [hidden] ="!item.setor">{{item.setor}}</p> 
+      <div class="column-2" *ngIf ="item.sinonimia">
+        <span class="lbl-small_bold_upperred" [hidden] ="!item.sinonimia">Sinonímia: </span>
+      <span class="p-texto" [hidden] ="!item.sinonimia">{{item.sinonimia}} </span>
+      </div>
+      <div class="column-2" *ngIf ="item.matbiologico">
+        <span class="lbl-small_bold_upperred" [hidden] ="!item.matbiologico" >Material Biológico: </span>
+      <span class="p-texto" [hidden] ="!item.matbiologico">{{item.matbiologico}}</span>
+      </div>                         
+      <div class="column-2" *ngIf ="item.volume">
+        <span class="lbl-small_bold_upperred" [hidden] ="!item.volume">Volume: </span>
+        <span class="p-texto" [hidden] ="!item.volume">{{item.volume}} </span>
+      </div>    
+      <div class="column-2" *ngIf ="item.conservante">
+        <span class="lbl-small_bold_upperred" [hidden] ="!item.conservante">Conservante: </span>
+      <span class="p-texto" [hidden] ="!item.conservante">{{item.conservante}} </span>
+      </div>    
+      <div class="column-2" *ngIf ="item.interverente">
+        <span class="lbl-small_bold_upperred" [hidden] ="!item.interverente">Interferentes: </span>
+      <span class="p-texto" [hidden] ="!item.interverente">{{item.interverente}}</span>
+      </div>    
+      <div class="column-2" *ngIf ="item.instrucoes">
+        <span class="lbl-small_bold_upperred" [hidden] ="!item.instrucoes">Instruções ao Paciente: </span>
+      <span class="p-texto" [hidden] ="!item.instrucoes">{{item.instrucoes}}</span>
+      </div>    
+      <div class="column-1" *ngIf ="item.interpretacao">
+        <span class="lbl-small_bold_upperred" [hidden] ="!item.interpretacao">Interpretação Clínica: </span>
+      <span class="p-texto" [hidden] ="!item.interpretacao">{{item.interpretacao}} </span> 
+      </div>         
+      <p class="p-fonte" [hidden] ="!item.fonte"> Fonte: {{item.fonte}}</p>      
+               
+    </mat-expansion-panel> 
+    
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header >
         <mat-panel-title>
-          <p class="lbl-mediumboldupper">{{item.titulo}}</p>
+          Configurações
         </mat-panel-title>
       </mat-expansion-panel-header>
-        <p class="lbl-mediumboldcaptz" [hidden] ="!item.setor">{{item.setor}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.sinonimia"><p class="lbl-mediumboldupperwhite">Sinonímia</p></mat-card>
-        <p class="p-texto" [hidden] ="!item.sinonimia">{{item.sinonimia}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.matbiologico"><p class="lbl-mediumboldupperwhite">Material Biológico</p></mat-card>
-        <p class="p-texto" [hidden] ="!item.matbiologico">{{item.matbiologico}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.volume"><p class="lbl-mediumboldupperwhite">Volume</p></mat-card>
-        <p class="p-texto" [hidden] ="!item.volume">{{item.volume}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.conservante"><p class="lbl-mediumboldupperwhite">Conservante</p></mat-card>
-        <p class="p-texto" [hidden] ="!item.conservante">{{item.conservante}} </p>
-        <mat-card class="card-expansion" *ngIf ="item.interverente"><p class="lbl-mediumboldupperwhite">Interferentes</p></mat-card>
-        <p class="p-texto" [hidden] ="!item.interverente">{{item.interverente}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.instrucoes"><p class="lbl-mediumboldupperwhite">Instruções ao Paciente</p></mat-card>
-        <p class="p-texto" [hidden] ="!item.instrucoes">{{item.instrucoes}}</p>
-        <mat-card class="card-expansion" *ngIf ="item.interpretacao"><p class="lbl-mediumboldupperwhite">Interpretação Clínica</p></mat-card>
-        <p class="p-texto" [hidden] ="!item.interpretacao">{{item.interpretacao}} </p>
-        <p class="p-fonte" [hidden] ="!item.fonte"> Fonte: {{item.fonte}}</p>
-    </mat-expansion-panel>
-    <mat-divider></mat-divider>    
+      <p class="lbl-mediumboldcaptz" [hidden] ="!item.setor">{{item.setor}}</p>
+      <p class="lbl-small_bold_upperred" [hidden] ="!item.sinonimia">Sinonímia</p>
+      <p class="p-texto" [hidden] ="!item.sinonimia">{{item.sinonimia}} </p>
+      <p class="lbl-small_bold_upperred" [hidden] ="!item.matbiologico" >Material Biológico</p>
+      <p class="p-texto" [hidden] ="!item.matbiologico">{{item.matbiologico}}</p>
+      <p class="lbl-small_bold_upperred" [hidden] ="!item.volume">Volume</p>
+      <p class="p-texto" [hidden] ="!item.volume">{{item.volume}} </p>
+      <p class="lbl-small_bold_upperred" [hidden] ="!item.conservante">Conservante</p>
+      <p class="p-texto" [hidden] ="!item.conservante">{{item.conservante}} </p>
+      <p class="lbl-small_bold_upperred" [hidden] ="!item.interverente">Interferentes</p>
+      <p class="p-texto" [hidden] ="!item.interverente">{{item.interverente}}</p>
+      <p class="lbl-small_bold_upperred" [hidden] ="!item.instrucoes">Instruções ao Paciente</p>
+      <p class="p-texto" [hidden] ="!item.instrucoes">{{item.instrucoes}}</p>
+      <p class="lbl-small_bold_upperred" [hidden] ="!item.interpretacao">Interpretação Clínica</p>
+      <p class="p-texto" [hidden] ="!item.interpretacao">{{item.interpretacao}} </p>   
+      <p class="p-fonte" [hidden] ="!item.fonte"> Fonte: {{item.fonte}}</p>      
+    </mat-expansion-panel> 
   </mat-accordion>
-</mat-list>
+
+  <mat-card-actions>
+    <a href="dash" class="a-hover-red">
+      <button mat-button matTooltip="Alterar as configurações do exame." matTooltipClass="tooltip-red"> 
+        <span class="card-actiocns">Editar</span>
+      </button> 
+    </a>
+  </mat-card-actions>
+</mat-card>
+
+</section>
+
