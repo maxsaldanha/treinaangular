@@ -12,7 +12,7 @@ export class ClientesComponent implements OnInit {
   panelOpenState = false;
   url = './assets/json/clientes.json';
 
-  constructor( public http: HttpClient) { }
+  constructor( public http: HttpClient) {   }
 
   ngOnInit() {
     this.http.get<any>(this.url).subscribe(Response => {
