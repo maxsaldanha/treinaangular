@@ -2,10 +2,10 @@
 <!-- Section com os botões de ação -->
 <section class="sub-menu">  
   <a href="dash">    
-    <img src="assets/icons/ic-new-user.svg" class="icon-mediun" matTooltip="Cadastrar um novo cliente." matTooltipClass="tooltip-red">   
+    <img src="assets/icons/ic-new-user.svg" class="icon-mediun icon-border-radius" matTooltip="Cadastrar um novo cliente." matTooltipClass="tooltip-red">   
   </a>
   <a href="dash">    
-    <img src="assets/icons/search-outline-white.svg" class="icon-mediun" matTooltip="Localizar um cliente." matTooltipClass="tooltip-red">   
+    <img src="assets/icons/search-outline-white.svg" class="icon-mediun icon-border-radius" matTooltip="Localizar um cliente." matTooltipClass="tooltip-red">   
   </a> 
 </section>
 
@@ -68,14 +68,16 @@
           <span class="lbl-small_bold_upper" >Cor/Etinia:</span> 
           <span class="lbl-mediumcapitalize"> {{item.cor_etnia}}</span>
         </div>
+      </section>
+      <section>
         <div class="column-2" *ngIf ="item.peso">
           <span class="lbl-small_bold_upper">Peso: </span> 
-          <span class="lbl-mediumcapitalize"> {{item.peso}}</span>
+          <span class="lbl-medium"> {{item.peso}}</span>
         </div>      
   
         <div class="column-2" *ngIf ="item.altura">
           <span class="lbl-small_bold_upper" >Altura: </span> 
-          <span class="lbl-mediumcapitalize"> {{item.altura}}</span>
+          <span class="lbl-medium"> {{item.altura}}</span>
         </div>
       </section> 
 

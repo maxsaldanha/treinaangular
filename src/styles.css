@@ -94,12 +94,7 @@ a {
   padding-right: 5px;
   color: #ffffff;
 }
-  /*CSS Icon Hover */
-  .icon:hover{
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-  }
-
+  
 .icon-mediun {
   height: 40px;
   width: 40px;
@@ -109,12 +104,7 @@ a {
   transition: all 1s;
   border: 3px solid transparent;
 }
-  /*CSS Icon Hover */
-  .icon-mediun:hover{
-    border: 3px solid #ffffff;
-    border-radius: 50%;  
-  }
-
+  
 .icon-small {
   height: 30px;
   width: 30px;
@@ -122,12 +112,7 @@ a {
   margin-bottom: -8px;
   color: #ffffff;
 }
-  /*CSS Icon Hover */
-  .icon-small:hover{
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-  }
-
+  
 .icon-small-dark {
   height: 30px;
   width: 30px;
@@ -135,10 +120,18 @@ a {
   margin-bottom: -8px;
   color: black;
 }
+.transiction {
+  transition: all 1s;
+  border: 2px solid transparent;
+}
   /*CSS Icon Hover */
-  .icon-small-dark:hover{
+  .icon-border-radius:hover {
     border: 3px solid #ffffff;
     border-radius: 50%;
+  }
+  .icon-border-menu:hover {
+    border: 2px solid #ffffff;
+    border-radius: 10%;
   }
 
 /*CSS Labels */

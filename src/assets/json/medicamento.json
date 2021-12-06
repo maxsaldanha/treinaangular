@@ -54,13 +54,85 @@
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
     },
     {
-      "titulo":"",
+      "titulo":"acetato de desmopressina",
       "caracteristicas":[
         {
-          "composicao":"",
-          "forma":"",
-          "codAtc": "",
-          "componente": ""
+          "composicao":"0,1 mg/mL",
+          "forma":"solução nasal (frasco com 2,5 mL",
+          "codAtc": "H01BA02",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"4 mcg/mL",
+          "forma":"solução injetável",
+          "codAtc": "H01BA02",
+          "componente": "Estratégico"
+        },
+        {
+          "composicao":"15 mcg/mL",
+          "forma":"solução injetável",
+          "codAtc": "H01BA02",
+          "componente": "Estratégico"
+        },
+        {
+          "composicao":"0,1 mg",
+          "forma":"comprimido",
+          "codAtc": "H01BA02",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"0,2 mg",
+          "forma":"comprimido",
+          "codAtc": "H01BA02",
+          "componente": "Especializado"
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"acetato de fludrocortisona",
+      "caracteristicas":[
+        {
+          "composicao":"0,1 mg",
+          "forma":"comprimido",
+          "codAtc": "H02AA02",
+          "componente": "Especializado"
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"acetato de glatirâmer",
+      "caracteristicas":[
+        {
+          "composicao":"20 mg",
+          "forma":"solução injetável",
+          "codAtc": "L03AX13",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"40 mg",
+          "forma":"solução injetável",
+          "codAtc": "L03AX13",
+          "componente": "Especializado"
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"acetato de gosserrelina",
+      "caracteristicas":[
+        {
+          "composicao":"3,6 mg",
+          "forma":"implante subcutâneo",
+          "codAtc": "L02AE03",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"10,8 mg",
+          "forma":"implante subcutâneo",
+          "codAtc": "L02AE03",
+          "componente": "Especializado"
         }
       ],      
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
@@ -71,6 +143,48 @@
         {
           "composicao":"10 mg/g (1%)",
           "forma":"creme",
+          "codAtc": "",
+          "componente": ""
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"acetato de lanreotida",
+      "caracteristicas":[
+        {
+          "composicao":"60 mg",
+          "forma":"solução injetável",
+          "codAtc": "H01CB03",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"90 mg",
+          "forma":"solução injetável",
+          "codAtc": "H01CB03",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"120 mg",
+          "forma":"solução injetável",
+          "codAtc": "H01CB03",
+          "componente": "Especializado"
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"acetato de leuprorrelina",
+      "caracteristicas":[
+        {
+          "composicao":"3,75 mg",
+          "forma":"",
+          "codAtc": "",
+          "componente": ""
+        },
+        {
+          "composicao":"11,25 mg",
+          "forma":"",
           "codAtc": "",
           "componente": ""
         }
@@ -102,26 +216,37 @@
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
     },
     {
-      "titulo":"acetato de sódio",
-      "caracteristicas": [
+      "titulo":"acetato de octreotida",
+      "caracteristicas":[
         {
-          "composicao":"2 mEq/mL",
-          "forma":"suspensão injetável",
+          "composicao":"",
+          "forma":"",
+          "codAtc": "",
+          "componente": ""
+        },
+        {
+          "composicao":"",
+          "forma":"",
+          "codAtc": "",
+          "componente": ""
+        },
+        {
+          "composicao":"",
+          "forma":"",
           "codAtc": "",
           "componente": ""
         }
       ],      
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
-    }
-    ,
+    },
     {
       "titulo":"acetato de sódio",
       "caracteristicas": [
         {
           "composicao":"2 mEq/mL",
           "forma":"suspensão injetável",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "B05XA08",
+          "componente": "Básico"
         }
       ],      
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
@@ -132,8 +257,8 @@
         {
           "composicao":"250 mg ",
           "forma":"comprimido",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "S01EC01",
+          "componente": "Básico e Especializado"
         }
       ],      
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
@@ -144,20 +269,20 @@
         {
           "composicao":"200 mg",
           "forma":"comprimido",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "J05AB01",
+          "componente": "Básico"
         },
         {
           "composicao":"50 mg/g (5%)",
           "forma":"creme",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "D06BB03",
+          "componente": "Básico"
         },
         {
           "composicao":"250 mg",
           "forma":"pó para solução injetável",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "J05AB01",
+          "componente": "Básico"
         }
       ],      
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
@@ -168,14 +293,14 @@
         {
           "composicao":"100 mg ",
           "forma":"comprimido",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "B01AC06",
+          "componente": "Básico"
         },
         {
           "composicao":"500 mg",
           "forma":"comprimido",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "N02BA01",
+          "componente": "Básico"
         }
       ],      
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
@@ -186,12 +311,36 @@
         {
           "composicao":"5 mg",
           "forma":"comprimido",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "B03BB01",
+          "componente": "Básico"
         },
         {
           "composicao":"0,2 mg/mL",
           "forma":"solução oral",
+          "codAtc": "",
+          "componente": "Básico"
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"ácido nicotínico",
+      "caracteristicas":[
+        {
+          "composicao":"",
+          "forma":"",
+          "codAtc": "",
+          "componente": ""
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"ácido paraminossalicílico",
+      "caracteristicas":[
+        {
+          "composicao":"",
+          "forma":"",
           "codAtc": "",
           "componente": ""
         }
@@ -211,6 +360,60 @@
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
     },
     {
+      "titulo":"",
+      "caracteristicas":[
+        {
+          "composicao":"",
+          "forma":"",
+          "codAtc": "",
+          "componente": ""
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"ácido tranexâmico",
+      "caracteristicas":[
+        {
+          "composicao":"250 mg",
+          "forma":"comprimido",
+          "codAtc": "B02AA02",
+          "componente": "Estratégico"
+        },
+        {
+          "composicao":"500 mg",
+          "forma":"comprimido",
+          "codAtc": "B02AA02",
+          "componente": "Estratégico"
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"ácido ursodesoxicólico",
+      "caracteristicas":[
+        {
+          "composicao":"50 mg",
+          "forma":"comprimido",
+          "codAtc": "A05AA02",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"150 mg",
+          "forma":"comprimido",
+          "codAtc": "A05AA02",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"300 mg",
+          "forma":"comprimido",
+          "codAtc": "A05AA02",
+          "componente": "Especializado"
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
       "titulo":"ácido valproico (valproato de sódio)",
       "caracteristicas": [
         {
@@ -222,26 +425,44 @@
         {
           "composicao":"250 mg",
           "forma":"comprimido",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "N03AG01",
+          "componente": "Básico"
         },
         {
           "composicao":"50 mg/mL",
           "forma":"solução oral",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "N03AG01",
+          "componente": "Básico"
         },
         {
           "composicao":"50 mg/mL",
           "forma":"xarope",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "N03AG01",
+          "componente": "Básico"
         },
         {
           "composicao":"500 mg",
           "forma":"comprimido",
-          "codAtc": "",
-          "componente": ""
+          "codAtc": "N03AG01",
+          "componente": "Básico"
+        }
+      ],      
+      "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
+    },
+    {
+      "titulo":"acitretina",
+      "caracteristicas":[
+        {
+          "composicao":"10 mg",
+          "forma":"cápsula",
+          "codAtc": "D05BB02",
+          "componente": "Especializado"
+        },
+        {
+          "composicao":"25 mg",
+          "forma":"cápsula",
+          "codAtc": "D05BB02",
+          "componente": "Especializado"
         }
       ],      
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
@@ -457,5 +678,6 @@
         }
       ],      
       "fonte":"https://bvsms.saude.gov.br/bvs/publicacoes/relacao_medicamentos_rename_2020.pdf"
-    }
+    }    
   ]
+
