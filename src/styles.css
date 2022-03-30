@@ -14,16 +14,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
   color: rgb(255, 255, 255);
   display: table;
   align-items: center;
-}
-
+  }
 .list-expansion{
   margin: 60px 5px 0px 5px;
-}
-
+  }
 .list-content{
   margin: 65px 5px 0px 5px;
-}
-
+  }
 .sub-menu{  
   direction: rtl;
   position: fixed;
@@ -32,48 +29,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
   right: 5px;
   z-index: 2;
   width: 200px;
-  display: table;
-   
-}
-/*CSS Button */
+  display: table;   
+  }
 
+/*CSS Button */
 .button-menu {
   display: table-cell;
   padding: 8px;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.lbl-buttom-menu {
-  font-size: small;
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
-}
-
+  }
 .button-sub-menu {
   border-radius: 15px 50px;
-}
-
-.lbl-buttom-menu2 :hover {
-  background: #7a0a0a;
-  color: #ffffff;
-  border-radius: 5px;
-  
-}
+  }
 
 /* CSS Panel Expansion*/
-
 mat-expansion-panel-header{
   background: #ffffff;
-}
+  }
 
+/* CSS link a*/
 a {
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
   padding: 1px;
-}
+  }
 .a-hover-red :hover {
   background: #7a0a0a;
   color: #ffffff;
@@ -84,16 +65,15 @@ a {
   background: #ffffff;
   color: #ffffff;
   border-radius: 5px;  
-}
+  }
 
 /*CSS ìcones */
-
 .icon {
   height: 30px;
   width: 30px;
   padding-right: 5px;
   color: #ffffff;
-}
+  }
   
 .icon-mediun {
   height: 40px;
@@ -103,7 +83,7 @@ a {
   fill: white;
   transition: all 1s;
   border: 3px solid transparent;
-}
+  }
   
 .icon-small {
   height: 30px;
@@ -111,7 +91,7 @@ a {
   padding-right: 2px;
   margin-bottom: -8px;
   color: #ffffff;
-}
+  }
   
 .icon-small-dark {
   height: 30px;
@@ -119,23 +99,25 @@ a {
   padding-right: 2px;
   margin-bottom: -8px;
   color: black;
-}
+  }
+
+/* Copnfiguração de transição do ícone*/
 .transiction {
   transition: all 1s;
   border: 2px solid transparent;
-}
-  /*CSS Icon Hover */
-  .icon-border-radius:hover {
-    border: 3px solid #ffffff;
-    border-radius: 50%;
   }
-  .icon-border-menu:hover {
-    border: 2px solid #ffffff;
-    border-radius: 10%;
+
+/*CSS Icon Hover */
+.icon-border-radius:hover {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  }
+.icon-border-menu:hover {
+  border: 2px solid #ffffff;
+  border-radius: 10%;
   }
 
 /*CSS Labels */
-
 .lbl-mediun_bold_upper {
   font-size: medium;
   font-weight: bold;
@@ -146,7 +128,7 @@ a {
   -moz-user-select: none;       /* Firefox */
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
-}
+  }
 
 .lbl-small_bold_upper {
   font-size: small;
@@ -158,8 +140,7 @@ a {
   -moz-user-select: none;       /* Firefox */
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
-}
-
+  }
 .lbl-small_bold_upperred {
   font-size: small;
   font-weight: bold;
@@ -171,8 +152,7 @@ a {
   -moz-user-select: none;       /* Firefox */
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
-}
-
+  }
 .lbl-small_bold_upper_white {
   font-size: small;
   font-weight: bold;
@@ -184,8 +164,7 @@ a {
   -moz-user-select: none;       /* Firefox */
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
-}
-
+  }
 .lbl-smallupperbold {
  font-size: small;
  text-transform: uppercase;
@@ -196,8 +175,7 @@ a {
   -moz-user-select: none;       /* Firefox */
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
-}
-
+  }
 .lbl-smallcapitalize {
   font-size: small;
   text-transform: capitalize;
@@ -207,8 +185,7 @@ a {
    -moz-user-select: none;       /* Firefox */
    -ms-user-select: none;        /* IE10+ */
    user-select: none;            /* Possível implementação no futuro */
- }
-
+  }
 .lbl-mediumcapitalize {
   font-size: medium;
   text-transform: capitalize;
@@ -218,8 +195,7 @@ a {
    -moz-user-select: none;       /* Firefox */
    -ms-user-select: none;        /* IE10+ */
    user-select: none;            /* Possível implementação no futuro */
- }
-
+  }
 .lbl-mediumboldcaptz {
   font-size: medium;
   font-weight: bold;
@@ -230,8 +206,7 @@ a {
    -moz-user-select: none;       /* Firefox */
    -ms-user-select: none;        /* IE10+ */
    user-select: none;            /* Possível implementação no futuro */
- }
-
+  }
  .lbl-medium {
   font-size: medium;
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -241,7 +216,19 @@ a {
    -ms-user-select: none;        /* IE10+ */
    user-select: none;            /* Possível implementação no futuro */
  }
+ .lbl-buttom-menu {
+  font-size: small;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  }
+.lbl-buttom-menu2 :hover {
+  background: #7a0a0a;
+  color: #ffffff;
+  border-radius: 5px;  
+  }
 
+  /*Paragrafos */
 .p-texto {
   font-size: medium;
   padding: 5px;
@@ -252,8 +239,7 @@ a {
   -moz-user-select: none;       /* Firefox */
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
-}
-
+  }
 .p-fonte {
   font-size: xx-small;
   text-align: right;
@@ -265,28 +251,23 @@ a {
   -moz-user-select: none;       /* Firefox */
   -ms-user-select: none;        /* IE10+ */
   user-select: none;            /* Possível implementação no futuro */
-}
-
+  }
 
 /* CSS Card*/
-
 mat-card-actions {
   align-items: flex-end;
   display: flex;
   align-self: flex-end;
-}
-
+  }
 .card-actiocns {
   font-weight: bold;
   text-transform: uppercase;  
-}
-
+  }
 .card-expansion {
   color: #000000;
   height: fit-content;
   margin: 5px;  
-}
-
+  }
 .card-list {
   margin-bottom: 5px;
 }
@@ -297,56 +278,48 @@ mat-card-actions {
   width: 100%;
   display:inline-table;
   text-align: justify;    
-}
-
+  }
 .column-2{
   width: calc(100% / 2);
   display: inline-table;
   text-align: justify; 
-}
-
+  }
 .column-3{
   width: calc(100% / 3);
   display: inline-table;
   text-align: justify; 
-}
-
+  }
 .column-4{
   width: calc(100% / 4);
   display: inline-table;
   text-align: justify;
-}
-
+  }
 .column-5{
   width: calc(100% / 5);
   display: inline-table;
   text-align: justify;
-}
-
+  }
 .column-6{
   width: calc(100% / 6);
   display: inline-table;
   text-align: justify;
-}
-
+  }
 .column-10{
   width: calc(100% / 10);
   display: inline-table;
   text-align: justify;
-}
-
+  }
 .column-20{
   width: calc(100% / 20);
   display: inline-table;
   text-align: justify;
-}
+  }
 
 /* CSS Hints de informação*/
-
 .tooltip-red {
   color: #ffffff; /*Cor da fonte */
   background: #7a0a0a; /*Cor do fundo */
-}
+  }
 
 /*Telas*/
 @media screen and (min-width: 1024px) {
