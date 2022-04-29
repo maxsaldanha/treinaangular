@@ -1,16 +1,16 @@
 <section class="sub-menu">
-    <a href="dash">
-        <img src="assets/icons/ic-new-user.svg" class="icon-mediun icon-border-radius" matTooltip="Cadastrar um novo cliente." matTooltipClass="tooltip-red">
-    </a>
-    <a href="dash">
-        <img src="assets/icons/search-outline-white.svg" class="icon-mediun icon-border-radius" matTooltip="Localizar um cliente." matTooltipClass="tooltip-red">
-    </a>
+    <mat-form-field appearance="outline">
+        <mat-label>
+            <mat-icon>search</mat-icon>Pesquise</mat-label>
+        <input matInput type="search" [(ngModel)]="term">
+        <button *ngIf="term" matSuffix mat-icon-button aria-label="Clear" (click)="term=''">
+          <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
 </section>
 
 <section class="list-content">
-
-
-    <mat-card *ngFor="let item of item" class="card-expansion">
+    <mat-card class="card-expansion" *ngFor="let item of  (item | filter:term)">
         <mat-card-title>
             <ng-template [ngIf]="item.nome_social" [ngIfElse]="nome_civil">
                 <div class="column-2">

@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ClientesComponent implements OnInit {
   item: any;
   panelOpenState = false;
+  term : string='';
   url = './assets/json/clientes.json';
 
   constructor( public http: HttpClient) {   }
