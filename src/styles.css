@@ -42,6 +42,8 @@ mat-label {
     height: min-content;
     border-radius: 10px;
     outline: white;
+    align-items: center;
+    padding: 5px;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
@@ -56,11 +58,11 @@ input {
 .sub-menu {
     position: fixed;
     height: fit-content;
-    top: 5px;
-    right: 5px;
+    top: 2px;
+    right: 2px;
     z-index: 2;
-    width: 200px;
-    display: table;
+    width: 400px;
+    display: inline-table;
 }
 
 
@@ -122,8 +124,6 @@ a {
     padding: 5px;
     color: #ffffff;
     fill: white;
-    transition: all 1s;
-    border: 3px solid transparent;
 }
 
 .icon-small {
@@ -449,9 +449,16 @@ mat-card-actions {
 }
 
 .column-20 {
-    width: calc(100% / 20);
+    width: calc(20%);
     display: inline-table;
     text-align: justify;
+}
+
+.column-80 {
+    width: calc(80%);
+    display: inline-table;
+    text-align: justify;
+    flex-direction: row;
 }
 
 
